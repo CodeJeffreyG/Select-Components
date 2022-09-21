@@ -14,11 +14,10 @@ type SelectProps = {
 export function Select({ value, onChange, options }: SelectProps) {
   return (
     <>
-      <div className="container">wrong</div>
-
-      <div className={styles.container}>right</div>
+      <div className={styles.container}>
+        <span className={styles.value}>value</span>
+        <button className={"clear-btn"}>&times;</button>
+      </div>
     </>
   );
 }
-
-
