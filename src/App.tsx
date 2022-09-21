@@ -1,5 +1,7 @@
+import { Select } from "./Select";
+
 function App() {
-  return <h1>hi</h1>;
+  return <Select />;
 }
 
 export default App;

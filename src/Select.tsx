@@ -1,4 +1,4 @@
-import styles from "./select.module.css"
+import styles from "./select.module.css";
 
 type selectOptions = {
   label: string;
@@ -11,6 +11,14 @@ type SelectProps = {
   onChange: (value: selectOptions | undefined) => void;
 };
 
-export default function Select({ value, onChange, options }: SelectProps) {
-  return <div className="container"></div>;
+export function Select({ value, onChange, options }: SelectProps) {
+  return (
+    <>
+      <div className="container">wrong</div>
+
+      <div className={styles.container}>right</div>
+    </>
+  );
 }
+
+
