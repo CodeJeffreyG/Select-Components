@@ -40,7 +40,7 @@ hover/focus of clear button makes clear button darker.
 
 #caret 
 
-very easy one gaver a .25em solid transparent border to allow scale with font size.
+very easy one gave a .25em solid transparent border to allow scale with font size.
 
 #divider
 
