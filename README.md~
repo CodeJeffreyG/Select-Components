@@ -55,7 +55,18 @@ align self stretch whole container
 removed all default styling on list. IE: maring:0, padding:0, List-style: none.
 
 set max-height to 15em The reason for this is when the element has too many items I want it to scroll.
+also set overflow y to auto. Meaning the scroll bar will go on the y axsis.
+
+now once I reach 15em height I get a scroll bar
+
+added z index to 100 so nothing can ever go over select box.
 
 create a .show class that shows and hides based off the state of the class.
 
 create an option class for each styling of each option
+
+#options selected/highlighted
+
+I am planning on creating a state for selected and highlighted
+so I want the chosen already HTML elements to be a light blue
+and the cursor that's hovering over the element to be dark blue.
