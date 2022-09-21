@@ -9,3 +9,5 @@ The idea for this Project was to create a simple select component to add to my l
 My first thought was to create a typescript interface to define the types of variables I'm going to use.
 
 Next, I decided to create a CSS Modules file so I could reuse class names such as "container." 
+
+I then proceded to create all of the small thing I would need for a select box component such as a clear button/caret symbol and a value box.

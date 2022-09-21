@@ -2,7 +2,7 @@ import styles from "./select.module.css";
 
 type selectOptions = {
   label: string;
-  value: string;
+  value: any;
 };
 
 type SelectProps = {
@@ -13,13 +13,18 @@ type SelectProps = {
 
 export function Select({ value, onChange, options }: SelectProps) {
   return (
-    <>
-      <div className={styles.container}>
-        <span className={styles.value}>value</span>
-        <button className={"clear-btn"}>&times;</button>
-        <div className={styles.divider}></div>
-        <div className={styles.caret}></div>
-      </div>
-    </>
+    <div className={styles.container}>
+      <span className={styles.value}>value</span>
+      <button className={"clear-btn"}>&times;</button>
+      <div className={styles.divider}></div>
+      <div className={styles.caret}></div>
+      <ul className={styles.options}>
+        {options.map((option) => (
+          <li key={option.label} className={styles.option}>
+            {option.label}
+          </li>
+        ))}
+      </ul>
+    </div>
   );
 }
