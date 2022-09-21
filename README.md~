@@ -1,1 +1,11 @@
 # Select-Components
+
+The idea for this Project was to create a simple select component to add to my library.
+
+
+
+#thought process
+
+My first thought was to create a typescript interface to define the types of variables I'm going to use.
+
+Next, I decided to create a CSS Modules file so I could reuse class names such as "container." 
