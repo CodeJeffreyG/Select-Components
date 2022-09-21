@@ -29,3 +29,9 @@ Gave container index a tabindex allowing user to tab to first select box.
 Change border color to blue if Select box is focused.
 
 Gave value element a flex-grow of 1 to make everything in the select box as far right as possible.
+
+Basically removed everything from close button. IE: border: none, outline: none ect.
+
+Gave close button a cursor of pointer.
+
+font size 1.25 em to scale with fontsize of select box.
