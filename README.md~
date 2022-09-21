@@ -35,3 +35,23 @@ Basically removed everything from close button. IE: border: none, outline: none 
 Gave close button a cursor of pointer.
 
 font size 1.25 em to scale with fontsize of select box.
+
+hover/focus of clear button makes clear button darker.
+
+#caret 
+
+very easy one gaver a .25em solid transparent border to allow scale with font size.
+
+#divider
+
+same #777 color ive been using everywhere
+
+align self stretch whole container
+
+.05 em width for tiny width 
+
+#options
+
+removed all default styling on list. IE: maring:0, padding:0, List-style: none.
+
+set max-height to 15em The reason for this is when the element has too many items I want it to scroll.

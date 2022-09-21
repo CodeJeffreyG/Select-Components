@@ -33,3 +33,35 @@
 .clear-btn:hover {
   color: #333;
 }
+
+.divider {
+  background-color: #777;
+  height: 100%;
+  align-self: stretch;
+}
+
+.caret {
+  translate: 0 25%;
+  border: 0.25em solid transparent;
+  border-top-color: #777;
+}
+
+.options {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  /* display: none; */
+  max-height: 15em;
+  overflow-y: auto;
+  border: 0.05em solid #777;
+  border-radius: 0.25em;
+  width: 100%;
+  left: 0;
+  top: calc(100% + 0.25em);
+  background-color: white;
+  z-index: 100;
+}
+
+.options.show {
+  display: block;
+}
