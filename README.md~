@@ -17,3 +17,15 @@ I created a static array of objects to represent future uses for my select compo
 #styling
 
 I realize how my select components select box needs to scale off of the font size used in future applications. So I used EM for the size of the select box, and the reasoning is EM scales off of font size.
+
+I set a min height of 1.5em to allow the wrapping of future elements.
+
+Set a nice border color of #777 and .05em allows border to scale with font size
+
+Flex box because its easy.
+
+Gave container index a tabindex allowing user to tab to first select box.
+
+Change border color to blue if Select box is focused.
+
+Gave value element a flex-grow of 1 to make everything in the select box as far right as possible.
