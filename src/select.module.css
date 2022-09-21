@@ -51,7 +51,7 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  /* display: none; */
+  display: none;
   max-height: 15em;
   overflow-y: auto;
   border: 0.05em solid #777;
@@ -65,4 +65,9 @@
 
 .options.show {
   display: block;
+}
+
+.option {
+  padding: 0.25em 0.5em;
+  cursor: pointer;
 }

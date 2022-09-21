@@ -55,3 +55,7 @@ align self stretch whole container
 removed all default styling on list. IE: maring:0, padding:0, List-style: none.
 
 set max-height to 15em The reason for this is when the element has too many items I want it to scroll.
+
+create a .show class that shows and hides based off the state of the class.
+
+create an option class for each styling of each option

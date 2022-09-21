@@ -20,7 +20,7 @@ export function Select({ value, onChange, options }: SelectProps) {
       <div className={styles.caret}></div>
       <ul className={`${styles.options} ${styles.show}`}>
         {options.map((option) => (
-          <li key={option.label} className={`${styles.options} ${styles.show}`}>
+          <li key={option.label} className={styles.option}>
             {option.label}
           </li>
         ))}
