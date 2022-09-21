@@ -17,6 +17,8 @@ export function Select({ value, onChange, options }: SelectProps) {
       <div className={styles.container}>
         <span className={styles.value}>value</span>
         <button className={"clear-btn"}>&times;</button>
+        <div className={styles.divider}></div>
+        <div className={styles.caret}></div>
       </div>
     </>
   );
