@@ -23,6 +23,7 @@ export function Select({ value, onChange, options }: SelectProps) {
 
   useEffect(() => {
     if (isOpen) setHighlightedIndex(0);
+    
   }, [isOpen]);
 
   return (
