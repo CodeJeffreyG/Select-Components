@@ -14,9 +14,11 @@ type SelectProps = {
 
 export function Select({ value, onChange, options }: SelectProps) {
   const [isOpen, setIsOpen] = useState<boolean>(false);
+  const [highLightedIndex, setHighlightedIndex] = useState<number>(0);
   const clearOptions = () => onChange(undefined);
   const selectOption = (option: selectOptions) => onChange(option);
   const isOptionSelected = (option: selectOptions) => option === value;
+
   return (
     <div
       onBlur={() => setIsOpen(false)}
@@ -37,17 +39,18 @@ export function Select({ value, onChange, options }: SelectProps) {
       <div className={styles.divider}></div>
       <div className={styles.caret}></div>
       <ul className={`${styles.options} ${isOpen ? styles.show : ""}`}>
-        {options.map((option) => (
+        {options.map((option, index) => (
           <li
             onClick={(e) => {
               e.stopPropagation();
               selectOption(option);
               setIsOpen(false);
             }}
+            onMouseEnter={() => setHighlightedIndex(index)}
             key={option.label}
             className={`${styles.option} ${
               isOptionSelected(option) ? styles.selected : ""
-            }`}
+            } ${index === highLightedIndex ? styles.highlighted : ""}`}
           >
             {option.label}
           </li>

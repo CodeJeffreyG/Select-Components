@@ -90,3 +90,5 @@ The clear button will listen for an onClick event once clicked will call the cle
 Created select options function that calls onChange(option) had each item in the list listen for a click event which will change the option in the select box to the option clicked by calling selectOption
 
 Created isOptionSelected function which checks is the value is the same as the option if it is. It highlights that option Blue.
+
+Created state for highlighted listens for an onMouseEnter event. On every mouse hover over the select box highlights the hovered option a dark blue. 
