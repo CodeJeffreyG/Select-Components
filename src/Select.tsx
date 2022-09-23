@@ -14,6 +14,9 @@ type SelectProps = {
 
 export function Select({ value, onChange, options }: SelectProps) {
   const [isOpen, setIsOpen] = useState<boolean>(false);
+  const clearOptions = () => onChange(undefined);
+  const selectOption = (option: selectOptions) => onChange(option);
+  const isOptionSelected = (option: selectOptions) => option === value;
   return (
     <div
       onBlur={() => setIsOpen(false)}
@@ -22,12 +25,30 @@ export function Select({ value, onChange, options }: SelectProps) {
       className={styles.container}
     >
       <span className={styles.value}>{value?.label}</span>
-      <button className={"clear-btn"}>&times;</button>
+      <button
+        onClick={(e) => {
+          e.stopPropagation();
+          clearOptions();
+        }}
+        className={"clear-btn"}
+      >
+        &times;
+      </button>
       <div className={styles.divider}></div>
       <div className={styles.caret}></div>
       <ul className={`${styles.options} ${isOpen ? styles.show : ""}`}>
         {options.map((option) => (
-          <li key={option.label} className={styles.option}>
+          <li
+            onClick={(e) => {
+              e.stopPropagation();
+              selectOption(option);
+              setIsOpen(false);
+            }}
+            key={option.label}
+            className={`${styles.option} ${
+              isOptionSelected(option) ? styles.selected : ""
+            }`}
+          >
             {option.label}
           </li>
         ))}

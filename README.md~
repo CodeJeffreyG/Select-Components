@@ -82,3 +82,11 @@ Created state for whether the select box is open or not "isOpen === true" will d
 Set caret to an onclick function that sets IsOpen state to true if false and false if true. 
 
 Created onBlur function so if clicked anywhere on the page select box closes.
+
+Created clearOptions function that uses onChange Prop and just simply passes undefined.
+
+The clear button will listen for an onClick event once clicked will call the clearOptions function.
+
+Created select options function that calls onChange(option) had each item in the list listen for a click event which will change the option in the select box to the option clicked by calling selectOption
+
+Created isOptionSelected function which checks is the value is the same as the option if it is. It highlights that option Blue.
