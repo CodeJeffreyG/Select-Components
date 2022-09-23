@@ -14,6 +14,8 @@ I then proceded to create all of the small thing I would need for a select box c
 
 I created a static array of objects to represent future uses for my select component.
 
+I passed the options in as a prop and used an on-change function that listens for a click. Once an option is clicked, it becomes the option in the box.
+
 #styling
 
 I realize how my select components select box needs to scale off of the font size used in future applications. So I used EM for the size of the select box, and the reasoning is EM scales off of font size.
@@ -70,3 +72,9 @@ create an option class for each styling of each option
 I am planning on creating a state for selected and highlighted
 so I want the chosen already HTML elements to be a light blue
 and the cursor that's hovering over the element to be dark blue.
+
+
+#Logic for single select
+
+Passed options through as a prop set the state of options to handle click events.
+
