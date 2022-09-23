@@ -16,7 +16,9 @@ export function Select({ value, onChange, options }: SelectProps) {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const [highLightedIndex, setHighlightedIndex] = useState<number>(0);
   const clearOptions = () => onChange(undefined);
-  const selectOption = (option: selectOptions) => onChange(option);
+  const selectOption = (option: selectOptions) => {
+    if (option !== value) onChange(option);
+  };
   const isOptionSelected = (option: selectOptions) => option === value;
 
   useEffect(() => {
