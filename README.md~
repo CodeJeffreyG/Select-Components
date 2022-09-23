@@ -73,8 +73,12 @@ I am planning on creating a state for selected and highlighted
 so I want the chosen already HTML elements to be a light blue
 and the cursor that's hovering over the element to be dark blue.
 
-
 #Logic for single select
 
 Passed options through as a prop set the state of options to handle click events.
 
+Created state for whether the select box is open or not "isOpen === true" will determine whether the select box will be open.
+
+Set caret to an onclick function that sets IsOpen state to true if false and false if true. 
+
+Created onBlur function so if clicked anywhere on the page select box closes.
